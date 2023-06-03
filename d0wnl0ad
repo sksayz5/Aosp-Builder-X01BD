@@ -4,7 +4,7 @@ free -h
 nproc
 cat /etc/os*
 env
-
+sudo pacman -Syu --noconfirm
 sudo pacman -S pigz --noconfirm
 
 
