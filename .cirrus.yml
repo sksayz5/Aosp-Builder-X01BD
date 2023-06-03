@@ -12,8 +12,8 @@ env:
     EXTRA_CMD: export BUILD_BROKEN_DUP_RULES := true
     LUNCH_COMBO: aosp_${DEVICE}-userdebug
     OUTPUT: PixelExperience*.zip
-    CLO: shazuxd:ci
-    CLO_1: ENCRYPTED[491727e3a5ff4a383fc9628411da692ee9af8372a55985f06494e5dc6d3c1ce61c4a2420a5a4563e0ba8fc4b887eb497]
+    CLO: idl:ci
+    CLO_1: ENCRYPTED[8b72d9ca2f095dd440092d84fb9795ecf70fc6 31872ac162da5e84088c44ad14a82fca3f217c8726c38db902634d1121]
     URI: https://github.com/exampleurl
     ROM_U: 0
 task:
