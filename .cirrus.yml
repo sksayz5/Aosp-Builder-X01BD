@@ -1,18 +1,21 @@
 env:
-    MANIFEST: https://github.com/Spark-Rom/manifest -b pyro
-    DEVICE: fleur
-    OEM: xiaomi
-    DT_LINK: https://github.com/ShazuxD/device_xiaomi_fleur
-    DT_PATH: device/android/vendor-blobs/vendor_xiaomi_miatoll.git
+    MANIFEST: https://github.com/PixelExperience/manifest -b thirteen
+    DEVICE: X01BD
+    OEM: asus
+    DT_LINK: https://github.com/ShazuxD/device_xiaomi_fl
+    DT_PATH: device/android/vendor-blobs/vendor_xiaomi_miat
     VT_PATH: vendor/$OEM/$DEVICE
-    KT_LINK: https://github.com/ArrowOS-Devices/android_kernel_xiaomi_sm6250.git
+    KT_LINK: https://github.com/ArrowOS-Devices/android_kernel_xiaomi_s
     PLATFORM: sm6250
     KT_PATH: kernel/$OEM/$PLATFORM
     TARGET: bacon
-    EXTRA_CMD: export SKIP_ABI_CHECKS=true
-    LUNCH_COMBO: spark_${DEVICE}-userdebug
+    EXTRA_CMD: export BUILD_BROKEN_DUP_RULES := true
+    LUNCH_COMBO: aosp_${DEVICE}-userdebug
     OUTPUT: PixelExperience*.zip
-
+    CLO: 
+    CLO_1:
+    URI: https://github.com/exampleurl
+    ROM_U: 0
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
   timeout_in: 240m
@@ -24,24 +27,13 @@ task:
 
 
   Storage-Checker_script:
-      - df -h
-      - lsblk
-      - ls -l -a -h
+      - ./d0wnl0ad
   
   Sync_script:
-      - echo "============================"
-      - echo "Syncing The Sources..."
-      - echo "============================"
-      - mkdir -p ~/work
-      - cd ~/work
-      - repo init --depth=1 -u $MANIFEST
-      - repo sync -j4 --force-sync --no-tags --no-clone-bundle
-      - git clone https://github.com/ShazuxD/device_xiaomi_fleur --depth=1 -b 13 device/xiaomi/fleur
-      - git clone https://github.com/ShazuxD/vendor_xiaomi_fleur --depth=1 -b 13 vendor/xiaomi/fleur
-      - git clone https://github.com/PixelExperience/device_mediatek_sepolicy_vndr --depth=1 device/mediatek/sepolicy_vndr
-      - echo "============================"
-      - echo "Syncing Complete!"
-      - echo "============================"
+      - ./syn0
 
   Build_script:
-      - ./bu*
+      - ./bu1ld
+
+  upload_script:
+      - ./upl0ad

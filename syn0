@@ -1,0 +1,13 @@
+#!/bin/bash
+mkdir -p ~/work
+cd ~/work
+repo init --depth=1 -u $MANIFEST
+repo sync -j4 --force-sync --no-tags --no-clone-bundle
+git clone $DT_LINK $DT_PATH
+git clone $VT_LINK $VT_PATH
+git clone $KT_LINK $KT_PATH
+echo 1
+echo 2
+echo 3
+echo 4
+echo 5
