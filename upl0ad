@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo apt install pigz -y
+apt install pigz -y
 cd /tmp
 
 com () 
@@ -12,7 +14,7 @@ mkdir -p ~/.config/rclone
 echo "$CLO_1" > ~/.config/rclone/rclone.conf # Write rclone config found from env variable, so that cloud storage can be used to upload ccache
 time rclone copy ccache.tar.gz $CLO -P
 
-if [ "$ROM_U" == "1" ] then;
+if [ "$ROM_U" == "1" ]; then
 cd ~/work/out/target/product/$DEVICE
 rclone copy $OUTPUT $CLO
 fi
