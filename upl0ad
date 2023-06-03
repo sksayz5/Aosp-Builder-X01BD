@@ -1,6 +1,5 @@
 #!/bin/bash
-sudo apt install pigz -y
-apt install pigz -y
+sudo apt install pigz 
 cd /tmp
 
 com () 

@@ -4,6 +4,11 @@ free -h
 nproc
 cat /etc/os*
 env
+
+sudo pacman -S pigz --noconfirm
+
+
+
 cd /tmp # Where to download cccahe
 time aria2c $URI -x16 -s50
 time tar xf ccache.tar.gz
