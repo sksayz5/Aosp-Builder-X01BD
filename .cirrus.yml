@@ -1,13 +1,17 @@
 env:
     MANIFEST: https://github.com/PixelOS-AOSP/manifest.git -b thirteen
-    DEVICE: fleur
-    OEM: xiaomi
-    DT_LINK: https://github.com/RT1648/device_xiaomi_fleur.git
-    DT_PATH: device/xiaomi/fleur
-    VT_LINK: https://github.com/RT1648/proprietary_vendor_xiaomi_ims-fleur.git
-    VT_PATH: vendor/$OEM/$DEVICE
+    DEVICE: X01BD
+    OEM: asus
+    DT_LINK: https://github.com/RT1648/android_device_asus_X01BD.git -b aosp
+    DT_PATH: device/asus/X01BD
+    VT_LINK: https://github.com/RT1648/proprietary_vendor_asus.git
+    KT_LINK: https://github.com/RT1648/android_kernel_asus_sdm660.git
+    CT_LINK: https://github.com/RT1648/android_device_asus_sdm660-common.git
+    VT_PATH: vendor/$OEM
+    KT_PATH: kernel/asus/sdm660
+    CT_PATH: device/asus/sdm660-common
     TARGET: bacon
-    LUNCH_COMBO: aosp_${DEVICE}-eng
+    LUNCH_COMBO: aosp_${DEVICE}-userdebug
     OUTPUT: P*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[6be4214fe754fc953fc0fcbb75283bc94bb9a9d78e715599e1df9931118bde6f493cffac82600a288959e421bc8f0c4c]
