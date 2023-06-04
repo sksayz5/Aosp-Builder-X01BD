@@ -12,7 +12,7 @@ env:
     CT_PATH: device/asus/sdm660-common
     TARGET: bacon
     LUNCH_COMBO: aosp_${DEVICE}-userdebug
-    OUTPUT: P*.zip
+    OUTPUT: PixelOS*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[6be4214fe754fc953fc0fcbb75283bc94bb9a9d78e715599e1df9931118bde6f493cffac82600a288959e421bc8f0c4c]
     URI: https://fleur.shazuxd7.workers.dev/0:/Rt/ccache.tar.gz
