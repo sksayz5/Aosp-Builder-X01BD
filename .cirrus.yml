@@ -11,7 +11,7 @@ env:
     OUTPUT: P*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[6be4214fe754fc953fc0fcbb75283bc94bb9a9d78e715599e1df9931118bde6f493cffac82600a288959e421bc8f0c4c]
-    URI: https://github.com/exampleurl
+    URI: https://download.wetransfer.com/eugv/83a6d95749bfcd3f9e53871b07228f5220230604102231/0652bf3dde625aefdba18fe75e330979e6cf41b5/ccache.tar.gz?cf=y&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImRlZmF1bHQifQ.eyJleHAiOjE2ODU4NzUyMDYsImlhdCI6MTY4NTg3NDYwNiwiZG93bmxvYWRfaWQiOiJjMDcxOGIxYi02OTMyLTQ2MWUtOGViNy0wYTNkNjRlNWE0MzMiLCJzdG9yYWdlX3NlcnZpY2UiOiJzdG9ybSJ9.69PWYRz0ceRu6iMNxfPzl2aPeXszlJpd95ehD_KLAAc
     ROM_U: 0
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
