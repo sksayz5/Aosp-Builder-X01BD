@@ -13,7 +13,7 @@ env:
     LUNCH_COMBO: aosp_${DEVICE}-userdebug
     OUTPUT: PixelExperience*.zip
     CLO: idl:ci
-    CLO_1: ENCRYPTED[8b72d9ca2f095dd440092d84fb9795ecf70fc6 31872ac162da5e84088c44ad14a82fca3f217c8726c38db902634d1121]
+    CLO_1: ENCRYPTED[6be4214fe754fc953fc0fcbb75283bc94bb9a9d78e715599e1df9931118bde6f493cffac82600a288959e421bc8f0c4c]
     URI: https://github.com/exampleurl
     ROM_U: 0
 task:
