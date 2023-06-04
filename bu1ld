@@ -6,9 +6,9 @@ $EXTRA_CMD
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-ccache -M 50G
+ccache -M 100G
 ccache -o compression=true
 ccache -z
 lunch "$LUNCH_COMBO"
-mka -j8 $TARGET
+mka -j8 $TARGET & sleep 90m
 
