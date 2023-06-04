@@ -15,6 +15,13 @@ time rclone copy ccache.tar.gz $CLO -P
 
 if [ "$ROM_U" == "1" ]; then
 cd ~/work/out/target/product/$DEVICE
-curl --upload-file $(echo $OUTPUT) https://transfer.sh | tee link.txt && echo " "
-cat link.txt && echo " "
+wget https://github.com/Sushrut1101/GoFile-Upload/raw/master/upload.sh
+
+chmod +x upload.sh
+
+sudo apt install jq -y
+
+./upload.sh PixelOS*.zip
+
+
 fi
