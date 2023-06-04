@@ -1,24 +1,21 @@
 env:
-    MANIFEST: https://github.com/PixelExperience/manifest -b thirteen
-    DEVICE: X01BD
-    OEM: asus
-    DT_LINK: https://github.com/ShazuxD/device_xiaomi_fl
-    DT_PATH: device/android/vendor-blobs/vendor_xiaomi_miat
+    MANIFEST: https://github.com/PixelOS-AOSP/manifest.git -b thirteen
+    DEVICE: fleur
+    OEM: xiaomi
+    DT_LINK: https://github.com/RT1648/device_xiaomi_fleur.git
+    DT_PATH: device/xiaomi/fleur
+    VT_LINK: https://github.com/RT1648/proprietary_vendor_xiaomi_ims-fleur.git
     VT_PATH: vendor/$OEM/$DEVICE
-    KT_LINK: https://github.com/ArrowOS-Devices/android_kernel_xiaomi_s
-    PLATFORM: sm6250
-    KT_PATH: kernel/$OEM/$PLATFORM
     TARGET: bacon
-    EXTRA_CMD: export BUILD_BROKEN_DUP_RULES := true
-    LUNCH_COMBO: aosp_${DEVICE}-userdebug
-    OUTPUT: PixelExperience*.zip
+    LUNCH_COMBO: aosp_${DEVICE}-eng
+    OUTPUT: *.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[6be4214fe754fc953fc0fcbb75283bc94bb9a9d78e715599e1df9931118bde6f493cffac82600a288959e421bc8f0c4c]
     URI: https://github.com/exampleurl
     ROM_U: 0
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
-  timeout_in: 240m
+  timeout_in: 120m
   container:
       image: ghcr.io/sushrut1101/docker:arch
       cpu: 8
