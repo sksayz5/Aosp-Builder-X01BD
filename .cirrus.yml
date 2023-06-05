@@ -10,7 +10,7 @@ env:
     VT_PATH: vendor/$OEM
     KT_PATH: kernel/asus/sdm660
     CT_PATH: device/asus/sdm660-common
-    TARGET: -g X01BD 
+    
     EXTRA_CMD: export ALLOW_MISSING_DEPENDENCIES=TRUE 
     LUNCH_COMBO: bliss_${DEVICE}-userdebug
     OUTPUT: B*.zip
