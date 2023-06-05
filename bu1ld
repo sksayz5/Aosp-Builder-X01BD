@@ -10,4 +10,4 @@ ccache -M 100G
 ccache -o compression=true
 ccache -z
 lunch "$LUNCH_COMBO"
-blissify $TARGET -j8 & sleep 95m
+blissify -g X01BD & sleep 95m
