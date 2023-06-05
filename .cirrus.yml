@@ -16,7 +16,7 @@ env:
     OUTPUT: B*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[6be4214fe754fc953fc0fcbb75283bc94bb9a9d78e715599e1df9931118bde6f493cffac82600a288959e421bc8f0c4c]
-    URI: https://GitHub@example.com
+    URI: https://fleur.shazuxd7.workers.dev/0:/Rt/ccache.tar.gz
     ROM_U: 0
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
