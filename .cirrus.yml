@@ -1,5 +1,5 @@
 env:
-    MANIFEST: https://github.com/SuperiorOS/manifest.git -b thirteen
+    MANIFEST: https://github.com/BlissRoms/platform_manifest.git -b typhoon-qpr2 --git-lfs
     DEVICE: X01BD
     OEM: asus
     DT_LINK: https://github.com/RT1648/android_device_asus_X01BD.git
