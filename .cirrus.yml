@@ -11,7 +11,7 @@ env:
     KT_PATH: kernel/asus/sdm660
     CT_PATH: device/asus/sdm660-common
     TARGET: bacon
-    EXTRA_CMD: BUILD_WITH_GAPPS := true
+    EXTRA_CMD: export ALLOW_MISSING_DEPENDENCIES=TRUE 
     LUNCH_COMBO: superior_${DEVICE}-userdebug
     OUTPUT: Superior*.zip
     CLO: idl:ci
