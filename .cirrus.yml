@@ -1,8 +1,8 @@
 env:
-    MANIFEST: https://github.com/PixelOS-AOSP/manifest.git -b thirteen
+    MANIFEST: https://github.com/SuperiorOS/manifest.git -b thirteen
     DEVICE: X01BD
     OEM: asus
-    DT_LINK: https://github.com/RT1648/android_device_asus_X01BD.git -b aosp
+    DT_LINK: https://github.com/RT1648/android_device_asus_X01BD.git
     DT_PATH: device/asus/X01BD
     VT_LINK: https://github.com/RT1648/proprietary_vendor_asus.git
     KT_LINK: https://github.com/RT1648/android_kernel_asus_sdm660.git
@@ -11,12 +11,12 @@ env:
     KT_PATH: kernel/asus/sdm660
     CT_PATH: device/asus/sdm660-common
     TARGET: bacon
-    LUNCH_COMBO: aosp_${DEVICE}-userdebug
-    OUTPUT: PixelOS*.zip
+    LUNCH_COMBO: superior_${DEVICE}-userdebug
+    OUTPUT: Superior*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[6be4214fe754fc953fc0fcbb75283bc94bb9a9d78e715599e1df9931118bde6f493cffac82600a288959e421bc8f0c4c]
-    URI: https://fleur.shazuxd7.workers.dev/0:/Rt/ccache.tar.gz
-    ROM_U: 1
+    URI: https://GitHub@example.com
+    ROM_U: 0
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
   timeout_in: 120m
