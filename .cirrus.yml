@@ -1,5 +1,5 @@
 env:
-    MANIFEST: https://github.com/BootleggersROM/manifest.git -b tirimbino
+    MANIFEST: https://github.com/CherishOS/android_manifest.git -b tiramisu
     DEVICE: X01BD
     OEM: asus
     DT_LINK: https://github.com/RT1648/android_device_asus_X01BD.git
@@ -11,8 +11,8 @@ env:
     KT_PATH: kernel/asus/sdm660
     CT_PATH: device/asus/sdm660-common
     
-    EXTRA_CMD: export ALLOW_MISSING_DEPENDENCIES=TRUE 
-    LUNCH_COMBO: bootleg_${DEVICE}-userdebug
+   
+    LUNCH_COMBO: cherish_${DEVICE}-userdebug
     OUTPUT: B*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[3169edd4c01ba48f5acdf3e095711295a4cd13bb5e1d4cb3b0b608286ee6339285fe0d611b7bd906d6b9e8d5f5e8541f]
