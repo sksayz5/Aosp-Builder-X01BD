@@ -1,5 +1,5 @@
 env:
-    MANIFEST: https://github.com/BlissRoms/platform_manifest.git -b typhoon-qpr2 --git-lfs
+    MANIFEST: https://github.com/bananadroid/android_manifest.git -b 13 --git-lfs
     DEVICE: X01BD
     OEM: asus
     DT_LINK: https://github.com/RT1648/android_device_asus_X01BD.git
@@ -12,11 +12,11 @@ env:
     CT_PATH: device/asus/sdm660-common
     
     EXTRA_CMD: export ALLOW_MISSING_DEPENDENCIES=TRUE 
-    LUNCH_COMBO: bliss_${DEVICE}-userdebug
+    LUNCH_COMBO: banana_${DEVICE}-userdebug
     OUTPUT: B*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[3169edd4c01ba48f5acdf3e095711295a4cd13bb5e1d4cb3b0b608286ee6339285fe0d611b7bd906d6b9e8d5f5e8541f]
-    URI: https://fleur.shazuxd7.workers.dev/0:/Rt/ccache.tar.gz
+    URI: 
     ROM_U: 0
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
