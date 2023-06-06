@@ -7,7 +7,7 @@ env:
     VT_LINK: https://github.com/RT1648/proprietary_vendor_asus.git
     KT_LINK: https://github.com/RT1648/android_kernel_asus_sdm660.git
     CT_LINK: https://github.com/RT1648/android_device_asus_sdm660-common.git
-    VT_PATH: vendor/$OEM
+    VT_PATH: vendor/asus
     KT_PATH: kernel/asus/sdm660
     CT_PATH: device/asus/sdm660-common
     
