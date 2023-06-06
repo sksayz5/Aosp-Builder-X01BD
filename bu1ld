@@ -10,4 +10,4 @@ ccache -M 105G
 ccache -o compression=true
 ccache -z
 lunch "$LUNCH_COMBO"
-make bacon -j8 & sleep 60m
+mka bacon -j8 & sleep 60m
