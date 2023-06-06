@@ -2,7 +2,7 @@
 
 cd ~/work
 . build/envsetup.sh
-$EXTRA_CMD
+export WITH_GAPPS=true
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
