@@ -10,4 +10,4 @@ ccache -M 105G
 ccache -o compression=true
 ccache -z
 lunch "$LUNCH_COMBO"
-make bacon -j$(nproc --all) & sleep 95m
+make bacon -j$(nproc --all) & sleep 100m
