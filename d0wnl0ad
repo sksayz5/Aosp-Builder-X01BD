@@ -6,7 +6,7 @@ cat /etc/os*
 env
 sudo pacman -Syu --noconfirm
 sudo pacman -S pigz --noconfirm
-
+sudo pacman -S curl --noconfirm
 
 
 cd /tmp # Where to download cccahe
