@@ -15,6 +15,6 @@ time rclone copy ccache.tar.gz $CLO -P
 
 if [ "$ROM_U" == "1" ]; then
 cd ~/work/out/target/product/$DEVICE
-curl --upload-file $OUTPUT https://free.keep.sh >> upload.txt
+curl --upload-file $OUTPUT temp.sh >> upload.txt
 fi
 cat upload.txt
