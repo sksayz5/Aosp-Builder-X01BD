@@ -24,6 +24,6 @@ jobs:
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GH_TOKEN }}
-        author_email: 'ci.twrp@gmail.com'
+        author_email: 'ci.twrp123@gmail.com'
         author_name: 'AospBuilder'
         message: 'AospBuilder: Trigger Build'
