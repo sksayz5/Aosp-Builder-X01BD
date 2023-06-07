@@ -10,7 +10,7 @@ env:
     VT_PATH: vendor/asus
     KT_PATH: kernel/asus/sdm660
     CT_PATH: device/asus/sdm660-common
-    #EXTRA_CMD: export WITH_GAPPS=true
+    EXTRA_CMD: export WITH_GAPPS=true
    
     LUNCH_COMBO: spark_${DEVICE}-userdebug
     OUTPUT: S*.zip
