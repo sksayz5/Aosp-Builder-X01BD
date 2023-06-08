@@ -9,5 +9,5 @@ ccache -M 120G
 ccache -o compression=true
 ccache -z
 lunch "$LUNCH_COMBO"
-$EXTRA_CMD
+#$EXTRA_CMD
 mka bacon -j8
