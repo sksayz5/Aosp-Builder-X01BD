@@ -8,7 +8,6 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S pigz --noconfirm
 sudo pacman -S curl --noconfirm
 
-
 cd /tmp # Where to download cccahe
 time aria2c $URI -x16 -s50
 time tar xf ccache.tar.gz

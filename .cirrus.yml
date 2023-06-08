@@ -1,17 +1,12 @@
 env:
     MANIFEST: https://github.com/Spark-Rom/manifest -b pyro
-    DEVICE: X01BD
-    OEM: asus
-    DT_LINK: https://github.com/RT1648/android_device_asus_X01BD.git
-    DT_PATH: device/asus/X01BD
-    VT_LINK: https://github.com/RT1648/proprietary_vendor_asus.git
-    KT_LINK: https://github.com/RT1648/android_kernel_asus_sdm660.git
-    CT_LINK: https://github.com/RT1648/android_device_asus_sdm660-common.git
-    VT_PATH: vendor/asus
-    KT_PATH: kernel/asus/sdm660
-    CT_PATH: device/asus/sdm660-common
+    DEVICE: fleur
+    OEM: xiaomi
+    DT_LINK: https://github.com/RT1648/device_xiaomi_fleur.git
+    DT_PATH: device/xiaomi/fleur
+    VT_LINK: https://github.com/RT1648/proprietary_vendor_xiaomi_ims-fleur.git
+    VT_PATH: vendor/xiaomi/fleur
     EXTRA_CMD: export WITH_GAPPS=true
-   
     LUNCH_COMBO: spark_${DEVICE}-userdebug
     OUTPUT: Spark*.zip
     CLO: idl:ci
@@ -26,11 +21,9 @@ task:
       cpu: 8
       memory: 32G
 
-
-
   Storage-Checker_script:
       - ./d0wnl0ad
-  
+ 
   Sync_script:
       - ./syn0
 
