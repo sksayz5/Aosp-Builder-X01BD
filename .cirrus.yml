@@ -1,15 +1,13 @@
 env:
     MANIFEST: https://github.com/Spark-Rom/manifest -b pyro
-    DEVICE: X01BD
-    OEM: asus
-    DT_LINK: https://github.com/RT1648/android_device_asus_X01BD.git
-    DT_PATH: device/asus/X01BD
-    VT_LINK: https://github.com/RT1648/proprietary_vendor_asus.git
-    KT_LINK: https://github.com/RT1648/android_kernel_asus_sdm660.git
-    CT_LINK: https://github.com/RT1648/android_device_asus_sdm660-common.git
-    VT_PATH: vendor/asus
-    KT_PATH: kernel/asus/sdm660
-    CT_PATH: device/asus/sdm660-common
+    DEVICE: RMX1901
+    OEM: realme
+    DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901_T.git -b spark
+    DT_PATH: device/realme/RMX1901
+    VT_LINK: https://github.com/Shravan55555/vendor_realme_RMX1901_T.git -b 13
+    KT_LINK: https://github.com/Shravan55555/kernel_realme_RMX1901_13.git -b x.337_ksu
+    VT_PATH: vendor/realme/RMX1901
+    KT_PATH: kernel/realme/RMX1901
     EXTRA_CMD: export WITH_GAPPS=true
     LUNCH_COMBO: spark_${DEVICE}-userdebug
     OUTPUT: S*.zip
