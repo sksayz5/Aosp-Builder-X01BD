@@ -4,12 +4,12 @@ env:
     OEM: realme
     DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901_T.git -b PP
     DT_PATH: device/realme/RMX1901
-    VT_LINK: https://github.com/shravansayz/vendor_realme_RMX1901_T.git -b 13
+    VT_LINK: https://github.com/shravan55555/vendor_realme_RMX1901_T.git -b 13
     KT_LINK: https://github.com/Shravan55555/kernel_realme_RMX1901_13.git -b x.337_ksu
     VT_PATH: vendor/realme/RMX1901
     KT_PATH: kernel/realme/RMX1901
     EXTRA_CMD: export WITH_GAPPS=true
-    LUNCH_COMBO: ${DEVICE}-userdebug
+    LUNCH_COMBO: proton_${DEVICE}-userdebug
     OUTPUT: P*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[3169edd4c01ba48f5acdf3e095711295a4cd13bb5e1d4cb3b0b608286ee6339285fe0d611b7bd906d6b9e8d5f5e8541f]
