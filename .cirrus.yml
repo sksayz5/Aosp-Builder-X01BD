@@ -19,7 +19,7 @@ task:
   name: "Setting Up, Syncing, Building and Uploading..."
   timeout_in: 240m
   container:
-      image: ghcr.io/sushrut1101/docker:arch
+      image: apon77/aosp:cirrus
       cpu: 24
       memory: 120G
 
