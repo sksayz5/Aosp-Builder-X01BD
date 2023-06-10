@@ -1,5 +1,5 @@
 env:
-    MANIFEST: https://github.com/DroidX-UI/manifest.git -b 13
+    MANIFEST: https://github.com/Project-LegionOS/manifest.git -b s
     DEVICE: RMX1901
     OEM: realme
     DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901_T.git -b PP
@@ -9,8 +9,8 @@ env:
     VT_PATH: vendor/realme/RMX1901
     KT_PATH: kernel/realme/RMX1901
     EXTRA_CMD: export WITH_GAPPS=true
-    LUNCH_COMBO: droidx_${DEVICE}-userdebug
-    OUTPUT: d*.zip
+    LUNCH_COMBO: legion_${DEVICE}-userdebug
+    OUTPUT: L*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[3169edd4c01ba48f5acdf3e095711295a4cd13bb5e1d4cb3b0b608286ee6339285fe0d611b7bd906d6b9e8d5f5e8541f]
     URI: https://fleur.shazuxd7.workers.dev/0:/Rt/ccache.tar.gz
