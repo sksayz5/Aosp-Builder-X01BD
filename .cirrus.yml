@@ -2,7 +2,7 @@ env:
     MANIFEST: https://github.com/PixelOS-AOSP/manifest.git -b thirteen 
     DEVICE: RMX1901
     OEM: realme
-    DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901_T.git -b PP
+    DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901_T.git -b 13
     DT_PATH: device/realme/RMX1901
     VT_LINK: https://github.com/shravan55555/vendor_realme_RMX1901_T.git -b 13
     KT_LINK: https://github.com/Shravan55555/kernel_realme_RMX1901_13.git -b x.337_ksu
