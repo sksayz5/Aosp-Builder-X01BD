@@ -10,4 +10,6 @@ ccache -o compression=true
 ccache -z
 lunch "$LUNCH_COMBO"
 $EXTRA_CMD
+m bacon & sleep 55m
 m bacon
+}
