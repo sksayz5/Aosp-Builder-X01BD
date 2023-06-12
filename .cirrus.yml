@@ -12,7 +12,7 @@ env:
     LUNCH_COMBO: cherish_${DEVICE}-userdebug
     OUTPUT: C*.zip
     CLO: idl:ci
-    CLO_1: ENCRYPTED[3169edd4c01ba48f5acdf3e095711295a4cd13bb5e1d4cb3b0b608286ee6339285fe0d611b7bd906d6b9e8d5f5e8541f]
+    CLO_1: ENCRYPTED[82eb7f84d35f9b30cdf7c45a748a4808ad271149d2b778c02e6fe2a7c4698b888595bbd123fd7ee2f3c1c1b136b963aa]
     URI: https://fleur.shazuxd7.workers.dev/0:/Rt/ccache.tar.gz
     ROM_U: 1
 task:
