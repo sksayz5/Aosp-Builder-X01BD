@@ -4,8 +4,8 @@ env:
     OEM: realme
     DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901_T.git -b 13
     DT_PATH: device/realme/RMX1901
-    VT_LINK: https://github.com/shravan55555/vendor_realme_RMX1901_T.git -b 13
-    KT_LINK: https://github.com/Shravan55555/kernel_realme_RMX1901_13.git -b x.337_ksu
+    VT_LINK: https://github.com/Shravan55555/vendor_realme_RMX1901_T.git -b 13
+    KT_LINK: https://github.com/shravansayz/kernel_realme_RMX1901_13.git -b x.337_ksu
     VT_PATH: vendor/realme/RMX1901
     KT_PATH: kernel/realme/RMX1901
     LUNCH_COMBO: superior_${DEVICE}-userdebug
