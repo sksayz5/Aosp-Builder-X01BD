@@ -1,5 +1,5 @@
 env:
-    MANIFEST: https://github.com/CherishOS/android_manifest.git -b tiramisu 
+    MANIFEST: https://github.com/Project-Xtended/manifest.git -b xt
     DEVICE: RMX1901
     OEM: realme
     DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901_T.git -b 13
@@ -9,15 +9,15 @@ env:
     VT_PATH: vendor/realme/RMX1901
     KT_PATH: kernel/realme/RMX1901
     EXTRA_CMD: export WITH_GAPPS=true
-    LUNCH_COMBO: cherish_${DEVICE}-userdebug
-    OUTPUT: C*.zip
+    LUNCH_COMBO: xtended_${DEVICE}-userdebug
+    OUTPUT: X*.zip
     CLO: idl:ci
     CLO_1: ENCRYPTED[82eb7f84d35f9b30cdf7c45a748a4808ad271149d2b778c02e6fe2a7c4698b888595bbd123fd7ee2f3c1c1b136b963aa]
     URI: https://fleur.shazuxd7.workers.dev/0:/Rt/ccache.tar.gz
     ROM_U: 1
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
-  timeout_in: 120m
+  timeout_in: 240m
   container:
       image: ghcr.io/sushrut1101/docker:arch
       cpu: 8
