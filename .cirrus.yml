@@ -16,7 +16,7 @@ env:
     ROM_U: 1
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
-  timeout_in: 240m
+  timeout_in: 120m
   container:
       image: ghcr.io/sushrut1101/docker:arch
       cpu: 8
