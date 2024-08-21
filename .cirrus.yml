@@ -18,7 +18,7 @@ task:
   name: "Setting Up, Syncing, Building and Uploading..."
   timeout_in: 120m
   container:
-      image: ghcr.io/sushrut1101/docker:arch
+      image: accupara/aosp:ubuntu
       cpu: 8
       memory: 32G
 
